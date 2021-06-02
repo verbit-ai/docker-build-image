@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TERRAFORM_VERSION=0.12.31
 RUN apt-get -qy update && \
-    apt-get install -qy ca-certificates wget unzip git awscli curl docker.io ruby ruby-bundler python3-pip && \
+    apt-get install -qy ca-certificates wget unzip git jq awscli curl docker.io ruby ruby-bundler python3-pip && \
     apt-get clean -qq
 
 RUN cd / && \
